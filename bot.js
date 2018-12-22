@@ -911,7 +911,7 @@ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
 if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     if (!message.channel.name.startsWith(`ticket`)) return message.channel.send(`لا يمكنك استخدام أمر الإغلاق خارج قناة التذاكر`);
  
-    message.channel.send(`**confirm** : هل انت متأكد من اغلاق التذكرة ؟ اذا انت متأكد اكتب`)
+    message.channel.send(`**!close** : هل انت متأكد من اغلاق التذكرة ؟ اذا انت متأكد اكتب`)
     .then((m) => {
       message.channel.awaitMessages(response => response.content === '!close', {
         max: 1,
