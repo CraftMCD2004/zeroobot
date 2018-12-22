@@ -848,7 +848,7 @@ message.react("❌")
 });
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', '♛『five』♛');
+    let channel = member.guild.channels.find('name', 'wlc');
     let memberavatar = member.user.avatarURL
       if (!channel) return;
     let embed = new Discord.RichEmbed()
@@ -1098,4 +1098,4 @@ client.on('ready', function(){
 
 });
 
-client.login('NTIzNjI2ODUzNDkyMDY0MjY3.Dv11dQ.v4nm0KhXB55-tp_NruhkeMTOu9Q');
+client.login('NTIzNjI2ODUzNDkyMDY0MjY3.Dv_WwA.Jztx6fFW5ZDMF8qS-6pxiSWfkLU');
